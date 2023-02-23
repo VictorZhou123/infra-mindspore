@@ -33,6 +33,8 @@ data:
         competition: competition
         question_pool: questionpool
         wukong_picture: wukongpicture
+        competition_work: competition_work
+        competition_player: competition_player
 
     gitlab:
       endpoint: "${GITLAB_ENDPOINT}"
