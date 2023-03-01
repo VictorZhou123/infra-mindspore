@@ -41,6 +41,9 @@ spec:
               name: xihe-statistics-secret
         image: swr.cn-north-4.myhuaweicloud.com/opensourceway/xihe/xihe-statistics:a8ed23f7a0180097980ace67e6bc9a11cc63a826
         imagePullPolicy: IfNotPresent
+        args:
+        - --port=8080
+        - --config-file=/conf/xihe-statistics/config.yaml
         livenessProbe:
           failureThreshold: 3
           initialDelaySeconds: 20
