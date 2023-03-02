@@ -19,6 +19,7 @@ data:
         model: model
         dataset: dataset 
         user: user
+        registration: registration
         login: login
         like: like
         activity: activity
@@ -35,6 +36,8 @@ data:
         wukong_picture: wukongpicture
         competition_work: competition_work
         competition_player: competition_player
+        course: course
+        course_player: course_player
 
     gitlab:
       endpoint: "${GITLAB_ENDPOINT}"
