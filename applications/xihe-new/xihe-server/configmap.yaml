@@ -9,7 +9,7 @@ data:
     authing:
       app_id: "${AUTHING_APP_ID}"
       secret: "${AUTHING_SECRET}"
-      endpoint: "https://omapi.osinfra.cn/oneid/oidc"
+      endpoint: "https://xiheapi.osinfra.cn/oneid/oidc"
 
     mongodb:
       db_conn: "${MONGODB_CONNECTION}"
