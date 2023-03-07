@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: xihe-server
-        image: swr.cn-north-4.myhuaweicloud.com/opensourceway/xihe/xihe-server:97f347b62bf46f56cedb5886999fa8335b9fcefb
+        image: swr.cn-north-4.myhuaweicloud.com/opensourceway/xihe/xihe-server:ac05fa60730a2ad5baa210bf1aea9904aed96ff5
         imagePullPolicy: IfNotPresent
         args:
         - --port=8000
