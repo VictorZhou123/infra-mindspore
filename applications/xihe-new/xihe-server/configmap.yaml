@@ -209,7 +209,7 @@ data:
         submission: "xihe_submission_new"
         operate_log: "xihe_operate_log_new"
         related_resource: "xihe_related_resource_new"
-        cloud: "xihe_cloud"
+        cloud: "xihe_cloud_new"
 
     training:
       job_done_status:
