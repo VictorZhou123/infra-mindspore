@@ -269,3 +269,4 @@ data:
         life: 
       table:
         pod: pod
+        wukong_task: wukong_task
