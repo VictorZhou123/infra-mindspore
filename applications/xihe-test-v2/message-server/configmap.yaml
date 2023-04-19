@@ -111,6 +111,7 @@ data:
         operate_log: "xihe_operate_log_test"
         related_resource: "xihe_related_resource_test"
         cloud: "xihe_cloud_test"
+        async: "xihe_async_test"
 
     evaluate:
       endpoint: http://service-inference-evaluate.xihe-test-v2.svc.cluster.local:8888
@@ -128,6 +129,7 @@ data:
         port: ${PGSQL_PORT}
       table:
         pod: pod
+        wukong_task: wukong_task
     
     cloud:
       endpoint: http://service-inference-evaluate.xihe-test-v2.svc.cluster.local:8888
