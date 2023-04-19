@@ -211,6 +211,7 @@ data:
         operate_log: "xihe_operate_log_test"
         related_resource: "xihe_related_resource_test"
         cloud: "xihe_cloud_test"
+        async: "xihe_async_test"
 
     training:
       job_done_status:
