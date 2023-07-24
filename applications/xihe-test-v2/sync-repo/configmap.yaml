@@ -4,17 +4,23 @@ metadata:
   name: configmap
 data:
   config.yaml: |
-    access_endpoint: http://service-hook-delivery.xihe-test-v2.svc.cluster.local:8000/gitlab-hook
-    access_hmac: "${ACCESS_HMAC}"
+    syncrepo:
+      access_endpoint: http://service-hook-delivery.xihe-test-v2.svc.cluster.local:8000/gitlab-hook
+      access_hmac: "${ACCESS_HMAC}"
+      topic: xihe-gitlab-test-v2
+      user_agent: Robot-Gitlab-Hook-Delivery
+      size_of_workspace: 40
+      average_repo_size: 2
+
     obs: 
       obsutil_path: /opt/app/obsutil
       access_key: "${HW_OBS_AK}"
       secret_key: "${HW_OBS_SK}"
       endpoint: "${HW_OBS_ENDPOINT}"
       bucket: "${HW_OBS_BUCKET}"
-
-    sync:
-      work_dir: "/opt/app/sync_repo"
+    
+    app:
+      work_dir: "/workspace"
       sync_file_shell: /opt/app/sync_file.sh
       lfs_path: gitlab-lfs
       repo_path: xihe-repos
@@ -23,7 +29,7 @@ data:
     mysql:
       conn: "${MYSQL_CONN}"
       conn_max_life_time: 1
-      table_name: "model"
+      table_name: "dataset_model"
 
     gitlab:
       token: "${GITLAB_TOKEN}"
