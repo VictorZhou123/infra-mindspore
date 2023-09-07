@@ -34,3 +34,9 @@ data:
     gitlab:
       token: "${GITLAB_TOKEN}"
       host: "${GITLAB_INNER_HOST}"
+
+    redis:
+      db:
+        address: "${REDIS_ADDRESS}"
+        password: "${REDIS_PASSWORD}"
+        key_pair: "${KEY_PAIR}"
