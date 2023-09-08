@@ -38,6 +38,8 @@ data:
         course_work: course_work
         course_record: course_record
         cloud_conf: cloud_conf
+        api_apply: api_apply
+        api_info: api_info
 
     postgresql:
       db:
@@ -50,6 +52,11 @@ data:
       table:
         pod: pod
         async_task: async_task
+    
+    redis:
+      address: "${REDIS_ADDRESS}"
+      password: "${REDIS_PASSWORD}"
+      key_pair: "${KEY_PAIR}"
 
     domain:
       min_name_length: 3
@@ -57,8 +64,8 @@ data:
       max_desc_length: 200
       max_title_length: 105
       min_title_length: 3
-      min_training_name_length: 1
-      max_training_name_length: 64
+      min_training_name_length: 5
+      max_training_name_length: 50
       max_training_desc_length: 256
       covers:
       - "1"
@@ -137,6 +144,7 @@ data:
 
     mq:
       address: "${KAFKA_ADDRESS}"
+      version: "2.3.0"
       topics:
         fork: "xihe_fork_test"
         like: "xihe_like_test"
