@@ -147,10 +147,10 @@ data:
     mq:
       address: "${KAFKA_ADDRESS}"
       version: "2.3.0"
-
     mq_topics:
       fork: "xihe_fork_test"
       like: "xihe_like_test"
+      cloud: "xihe_jupyter_created_test"
       download: "xihe_download_test"
       evaluate: "xihe_evaluate_test"
       training: "xihe_training_test"
@@ -160,18 +160,19 @@ data:
       submission: "xihe_submission_test"
       operate_log: "xihe_operate_log_test"
       related_resource: "xihe_related_resource_test"
-      cloud: "xihe_cloud_test"
       async: "xihe_async_test"
-      bigmodel: "xihe_bigmodel_test"
       signin:
         name: "sign_in"
         topic: "xihe_sign_in_test"
-      competitor_applied: "xihe_competitor_applied_test"
-      inference_start: "xihe_inference_start_test"
-      InferenceError: "xihe_Inference_error_test"
-      inference_async_start: "xihe_inference_async_start_test"
-      inference_async_finish: "xihe_inference_async_finish_test"
+      bigmodel_topics:
+        inference_start: "xihe_inference_start_test"
+        inference_error: "xihe_inference_error_test"
+        inference_async_start: "xihe_inference_async_start_test"
+        inference_async_finish: "xihe_inference_async_finish_test"
       picture_publicized: "xihe_picture_publicized_test"
+      picture_liked: "xihe_picture_liked_test"
+      competitor_applied: "xihe_competitor_applied_test"
+      jupyter_created: "xihe_jupyter_created_test"
       course_applied: "xihe_course_applied_test"
 
     evaluate:
