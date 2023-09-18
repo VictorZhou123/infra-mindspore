@@ -147,6 +147,7 @@ data:
     mq:
       address: "${KAFKA_ADDRESS}"
       version: "2.3.0"
+
     mq_topics:
       fork: "xihe_fork_test"
       like: "xihe_like_test"
