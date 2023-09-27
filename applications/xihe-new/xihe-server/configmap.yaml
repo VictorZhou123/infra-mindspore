@@ -130,6 +130,7 @@ data:
         wukong_user: "${BIGMODEL_WUKONG_USER}"
         baichuan: "${BIGMODEL_BAICHUAN}"
         glm: "${BIGMODEL_GLM}"
+        llama: "${BIGMODEL_LLAMA}"
 
       obs:
         endpoint: "${VQA_OBS_ENDPOINT}"

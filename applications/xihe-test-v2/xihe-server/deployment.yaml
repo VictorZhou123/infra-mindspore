@@ -358,6 +358,11 @@ spec:
             secretKeyRef:
               key: BIGMODEL_GLM
               name: xihe-secret
+        - name: BIGMODEL_LLAMA
+          valueFrom:
+            secretKeyRef:
+              key: BIGMODEL_LLAMA
+              name: xihe-secret
         - name: ENCRYPTION_KEY_GITLAB_TOKEN
           valueFrom:
             secretKeyRef:
